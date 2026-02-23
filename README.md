@@ -96,7 +96,7 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
         x = state.X;
         y = state.Y;
 
-        **y = 300 - y;**
+        y = 300 - y;
         return true;
     }
     return false;
